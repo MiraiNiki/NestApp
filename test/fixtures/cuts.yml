@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  velocity: MyString
+  : 1
+  output: MyString
+  : 1
+  success: MyString
+  : false
+  work: MyString
+  : one
+
+two:
+  velocity: MyString
+  : 1
+  output: MyString
+  : 1
+  success: MyString
+  : false
+  work: MyString
+  : two
