@@ -1,3 +1,3 @@
 class Cut < ApplicationRecord
-  belongs_to :
+  belongs_to :work
 end
