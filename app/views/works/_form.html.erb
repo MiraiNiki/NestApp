@@ -12,6 +12,7 @@
   <% end %>
 
   <div class="field">
+    <%#= f.hidden_field :id,:value => @work.id %>
     <%= f.label :title %>
     <%= f.text_field :title %>
   </div>
@@ -20,6 +21,13 @@
     <%= f.label :source %>
     <%= f.text_field :source %>
   </div>
+
+    <div class="field">
+      <%= f.fields_for :cuts do |df| %>
+          <%= render partial: "cut_form", locals: {f: df } %>
+      <% end %>
+      <%= link_to_add_field("cut add", f, :cuts, {})%>
+    </div>
 
   <div class="actions">
     <%= f.submit %>

@@ -69,6 +69,6 @@ class WorksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def work_params
-      params.require(:work).permit(:title, :source)
+      params.require(:work).permit(:title, :source,:_destroy,cuts_attributes:[:velocity,:output,:success,:_destroy])
     end
 end

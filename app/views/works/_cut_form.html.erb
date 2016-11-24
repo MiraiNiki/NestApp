@@ -1,0 +1,13 @@
+<div class="field">
+  <%= f.hidden_field :id %>
+  <%= f.label :success, "出来栄え" %>
+  <%= f.text_field :success%><br />
+  <%= f.label :output, "出力" %>
+  <%= f.text_field :output %><br />
+  <%= f.label :velocity, "速度" %>
+  <%= f.text_field :velocity %><br />
+  <%#= f.hidden_field :work, @work.id %>
+  <br>
+  <%= link_to_remove_field("cut remove", f, {}) %>
+
+</div>

@@ -10,5 +10,25 @@
   <%= @work.source %>
 </p>
 
+<% @work.cuts.each do |n| %>
+    <p>
+      <strong>Success:</strong>
+      <%= n.success %>
+    </p>
+
+
+    <p>
+      <strong>Output:</strong>
+      <%= n.output %>
+    </p>
+
+    <p>
+      <strong>Velocity:</strong>
+      <%= n.velocity %>
+    </p>
+
+<%end%>
+
+
 <%= link_to 'Edit', edit_work_path(@work) %> |
 <%= link_to 'Back', works_path %>
